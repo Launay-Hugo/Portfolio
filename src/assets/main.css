@@ -1,0 +1,6 @@
+@import './base.css';
+
+:root {
+  --green: #4caf50;
+  --lightgreen: #81c784;
+}
