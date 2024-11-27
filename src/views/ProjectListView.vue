@@ -64,24 +64,35 @@ const projects = [
 .project-list h2 {
   font-weight: bold;
   font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
   gap: 20px;
-  padding-top: 24px;
-  margin-left: 140px;
-  margin-right: 140px;
-  justify-content: center; /* Centre les projets horizontalement */
+  padding: 20px; /* Ajout de padding au lieu de marges fixes */
+  justify-content: center;
+  align-items: start;
 }
 
-.projects-grid > :nth-child(4) {
-  grid-column: 2 / 3; /* Centre le 4ème projet */
+.project-card {
+  width: 100%; /* S'adapte à la largeur de la colonne */
+  max-width: 300px; /* Taille maximale */
+  margin: 0 auto; /* Centre la card dans sa colonne */
 }
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* Single column on small screens */
+    grid-template-columns: 1fr; /* Une seule colonne sur petits écrans */
+    padding: 10px; /* Réduit le padding pour les petits écrans */
   }
 }
 </style>

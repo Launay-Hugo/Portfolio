@@ -28,6 +28,9 @@ defineProps({
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .project-card:hover {
@@ -68,5 +71,10 @@ defineProps({
 
 .project-card a:hover {
   background-color: var(--lightgreen);
+}
+@media (max-width: 768px) {
+  .project-card {
+    margin: 0 auto; /* Centrer les cards */
+  }
 }
 </style>
