@@ -24,5 +24,6 @@ import ProjectListView from './views/ProjectListView.vue'
   flex: 1; /* Permet à la section principale de s'étendre */
   padding: 30px;
   background-color: #f4f4f9;
+  padding-bottom: 100px;
 }
 </style>

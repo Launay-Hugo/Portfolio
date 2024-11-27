@@ -42,6 +42,14 @@ const showModal = ref(false)
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
 }
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.header nav {
+  display: flex;
+  gap: 15px;
+}
 
 .header nav a {
   margin: 0 15px;
@@ -105,5 +113,16 @@ const showModal = ref(false)
 
 .close-button:hover {
   background: var(--lightgreen);
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 </style>

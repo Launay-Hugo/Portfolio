@@ -21,6 +21,7 @@
   left: 0;
   width: 100%;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 .footer .social-links a {
@@ -34,5 +35,15 @@
 .footer .social-links a:hover {
   color: var(--lightgreen);
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer .social-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 </style>

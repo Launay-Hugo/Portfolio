@@ -79,4 +79,9 @@ const projects = [
 .projects-grid > :nth-child(4) {
   grid-column: 2 / 3; /* Centre le 4ème projet */
 }
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}
 </style>
